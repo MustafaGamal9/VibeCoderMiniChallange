@@ -17,13 +17,18 @@ A reusable Angular component creating a beautiful and functional Hero Section fo
 
 ## 🚀 Setup and Running Locally
 
-1.  **Clone the repository:**
+1.  **Install Angular CLI globally (if you haven't already):**
+    ```bash
+    npm install -g @angular/cli
+    ```
+
+2.  **Clone the repository:**
     ```bash
     git clone https://github.com/MustafaGamal9/VibeCoderMiniChallange.git
     cd VibeCoderMiniChallange
     ```
 
-2.  **Install dependencies:**
+3.  **Install dependencies:**
     Make sure you have Node.js and npm (or yarn) installed.
     
     ```bash

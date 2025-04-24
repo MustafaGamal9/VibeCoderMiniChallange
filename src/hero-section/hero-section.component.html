@@ -1,0 +1,43 @@
+<!-- hero-section.component.html -->
+<section class="hero-section section-padding">
+    <!-- Floating bubbles -->
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <div class="container hero-container">
+        <div class="hero-text">
+            <!-- Headline: Use (input) for immediate saving -->
+            <h1 class="hero-title"
+                contenteditable="true"
+                (input)="updateHeadline($event)"> <!-- Changed from (blur) -->
+                {{ headline }}
+            </h1>
+            <!-- Subheadline: Use (input) for immediate saving -->
+            <p class="hero-description"
+               contenteditable="true"
+               (input)="updateSubheadline($event)"> <!-- Changed from (blur) -->
+                {{ subheadline }}
+            </p>
+            <!-- Buttons Container -->
+            <div class="hero-buttons">
+                <!-- Main CTA Button -->
+                <a routerLink="/courses" class="hero-button">
+                    Get started
+                    <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+                </a>
+                <!-- Regenerate Button -->
+                <button (click)="regenerateContent()" class="regenerate-button">
+                    Regenerate with AI
+                    <i class="fa-solid fa-wand-magic-sparkles" style="margin-left: 8px;"></i>
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Image: Bound to component property (imageUrl includes cache-busting) -->
+            <img [src]="imageUrl" alt="Studying Illustration">
+        </div>
+    </div>
+</section>

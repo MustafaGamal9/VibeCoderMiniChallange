@@ -1,59 +1,42 @@
-# VibeCoderChallange
+# Hero Section – Vibe Coder Mini Challenge
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+A reusable Angular component creating a beautiful and functional Hero Section for an e-learning website. This component features inline text editing, simulated AI content regeneration with local storage persistence, and a responsive design, built as part of the Vibe Coder Mini Challenge.
 
-## Development server
+## ✨ Features
 
-To start a local development server, run:
+*   **Core Hero Elements:** Includes a headline, subheadline, Call-to-Action (CTA) button, and an illustrative image.
+*   **Inline Text Editing:** Click directly on the headline or subheadline to edit the text in place. Edits are captured using the `(input)` event for frequent saving.
+*   **Local Storage Persistence:** User's text edits and the last viewed content index are saved in the browser's `localStorage` and persist across sessions.
+*   **Simulated AI Regeneration:** A "Regenerate with AI" button randomly swaps the headline, subheadline, and image from predefined local lists. It prevents the exact same item from appearing twice consecutively.
+*   **Responsive Design:** Adapts gracefully to various screen sizes, from mobile to desktop.
 
-```bash
-ng serve
-```
+## 🛠️ Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+*   **Frontend:** Angular 
+*   **Styling:** CSS 
 
-## Code scaffolding
+## 🚀 Setup and Running Locally
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/MustafaGamal9/VibeCoderMiniChallange.git
+    cd VibeCoderMiniChallange
+    ```
 
-```bash
-ng generate component component-name
-```
+2.  **Install dependencies:**
+    Make sure you have Node.js and npm (or yarn) installed.
+    
+    ```bash
+    npm install
+    ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+4.  **Run the development server:**
+    ```bash
+    ng serve
+    ```
+    The application will build and automatically open in your default browser, Open `http://localhost:4200/`. The hero section component should be visible on the main page.
 
-```bash
-ng generate --help
-```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📝 Submission Info
+*   **Submitted by:** Musafa 
+*   **Email:** moustafagamal611@gmail.com
